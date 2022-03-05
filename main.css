@@ -19,19 +19,18 @@
 /* HTML and Body Styles */
 html {
    background-color: hsl(11, 39%, 80%);
-}
+ }
 body {
     margin-left: auto;
     margin-right: auto;
-    max-width: 960px;
-    min-width: 640px;
-    width: 95%;
-   color: rgb(184, 107, 119);
-   background-color: ivory;
-   font-family: Verdana, Geneva, sans-serif;
+    width: 80%;
+    color: rgb(184, 107, 119);
+    background-color: ivory;
+    font-family: Verdana, Geneva, sans-serif;
+    vertical-align: middle;
+    padding-top: 25px;
+
 }
-
-
 
 /* Body Heading Styles */
 h1 {
@@ -44,31 +43,19 @@ h1, h2 {
  font-family: Helvetica, Verdana, Geneva, sans-serif;
  letter-spacing: 0.1em;
 }
-article#about h1 {
-   color: ivory;
-   background-color: rgb(255, 232, 229);
-}
-article#about h2 {
-   color: ivory;
-   background-color: rgb(255, 232, 229);
-}
-article.syllabus h1, article.syllabus h2 {
- background-color: rgb(255, 232, 229);
- color: rgb(101, 101, 101);
-}
 
-body > header > img {
+ img {
  display: block;
  width: 100%;
 }
 
-body > header > nav.horizontalNavigation li {
- width: 33%;
+ nav li {
+ width: 20%;
 }
 
 /* Floating Styles*/
 
-nav.horizontalNavigation li{
+nav li{
     display: block;
     float: left;
 }  
@@ -76,10 +63,11 @@ nav.horizontalNavigation li{
 
 /*Left Column Styles*/
 
+
 section#leftcolumn{
         clear: left;
         float: left;
-        padding: 1.5em;
+        padding: 70px;
         width: 50%;
     }
 section#leftcolumn img {
@@ -92,6 +80,7 @@ section#leftcolumn img {
 
 section#rightcolumn{
         float: left;
+        padding: 70px;
         width: 50%;
     }
 
@@ -120,11 +109,11 @@ nav > ul {
  line-height: 2em;
 }
 
-nav.horizontalNavigation li {
+nav li {
  display: block;
  float: left;
 }
-nav.horizontalNavigation a {
+nav a {
  display: block;
  text-align: center;
 }
@@ -136,9 +125,9 @@ address, article, aside, blockquote, body, cite,
 div, dl, dt, dd, em, figcaption, figure, footer,
 h1, h2, h3, h4, h5, h6, header, html, img,
 li, main, nav, ol, p, section, span, ul {
- background: transparent;
+ 
  font-size: 100%;
- margin: 0;
+ margin: 10;
  padding: 0;
  vertical-align: baseline;
  box-sizing: border-box;
@@ -155,6 +144,9 @@ body {
  line-height: 1;
 }
 
+div {
+  column-gap: 40px;
+}
 
 /* Footer Styles */
 body > footer address {
